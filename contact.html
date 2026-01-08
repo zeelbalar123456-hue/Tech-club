@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club - Contact / Join</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">🚀</span>
+                <span class="logo-text">Tech Club</span>
+            </div>
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact/Join</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light mode">
+                <span class="icon-sun" aria-hidden="true">☀️</span>
+                <span class="icon-moon" aria-hidden="true">🌙</span>
+                <span class="sr-only">Toggle dark or light theme</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact / Join Us</h1>
+                <p class="page-subtitle">Get in touch or become a member today.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-layout">
+                <section class="contact-form-card" aria-labelledby="contact-heading">
+                    <h2 id="contact-heading">Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            <p class="form-error">Please enter your name.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            <p class="form-error">Please enter a valid email address.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="membership">Membership</option>
+                                <option value="events">Events</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="form-error">Please choose a subject.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                            <p class="form-error">Please enter a message.</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </section>
+
+                <section class="contact-info" aria-label="Contact information">
+                    <h2>Contact Information</h2>
+                    <ul class="contact-info-list">
+                        <li><strong>Address:</strong> Tech Building, Room 305, Campus</li>
+                        <li><strong>Email:</strong> info@techclub.com</li>
+                        <li><strong>Phone:</strong> (555) 123-4567</li>
+                        <li><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Membership Options</h2>
+                <div class="grid membership-grid">
+                    <article class="card membership-card">
+                        <h3>Free Member</h3>
+                        <p class="membership-price">$0 / year</p>
+                        <ul class="membership-features">
+                            <li>Access to public events</li>
+                            <li>Community chat</li>
+                            <li>Monthly newsletter</li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full">Sign Up Free</button>
+                    </article>
+                    <article class="card membership-card membership-featured">
+                        <h3>Premium Member</h3>
+                        <p class="membership-price">$25 / year</p>
+                        <ul class="membership-features">
+                            <li>Everything in Free</li>
+                            <li>Exclusive workshops</li>
+                            <li>Project mentorship</li>
+                            <li>Priority event access</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full">Join Premium</button>
+                    </article>
+                    <article class="card membership-card">
+                        <h3>Corporate</h3>
+                        <p class="membership-price">$500 / year</p>
+                        <ul class="membership-features">
+                            <li>Company branding at events</li>
+                            <li>Recruitment opportunities</li>
+                            <li>Custom workshops</li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full">Contact Us</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-list" id="faqList">
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>How do I become a member?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fill out the contact form above or talk to us at any event. We will guide you through the quick signup process.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Do I need programming experience?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No experience is required. We run beginner-friendly sessions and pair newcomers with mentors.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>How often do you meet?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We usually host at least one workshop or event every month, plus informal meetups.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-section">
+                <h3>Tech Club</h3>
+                <p>Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>📧 info@techclub.com</li>
+                    <li>📞 (555) 123-4567</li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">🚀</span>
+                <span class="logo-text">Tech Club</span>
+            </div>
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact/Join</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light mode">
+                <span class="icon-sun" aria-hidden="true">☀️</span>
+                <span class="icon-moon" aria-hidden="true">🌙</span>
+                <span class="sr-only">Toggle dark or light theme</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Gallery</h1>
+                <p class="page-subtitle">Highlights from our workshops, hackathons, and meetups.</p>
+            </div>
+        </section>
+
+        <section class="section gallery-filter">
+            <div class="container">
+                <div class="filter-buttons" aria-label="Filter gallery by category">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="workshops">Workshops</button>
+                    <button class="filter-btn" data-filter="hackathons">Hackathons</button>
+                    <button class="filter-btn" data-filter="meetups">Meetups</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid gallery-grid">
+                    <article class="gallery-item" data-category="hackathons">
+                        <div class="gallery-image">
+                            <div class="placeholder-gallery"><span>🏆</span></div>
+                            <div class="gallery-overlay">
+                                <h3>Hackathon Winners</h3>
+                                <p>Celebrating the top teams.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="workshops">
+                        <div class="gallery-image">
+                            <div class="placeholder-gallery"><span>💻</span></div>
+                            <div class="gallery-overlay">
+                                <h3>Web Dev Workshop</h3>
+                                <p>Learning HTML &amp; CSS.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <div class="placeholder-gallery"><span>🎤</span></div>
+                            <div class="gallery-overlay">
+                                <h3>Tech Talk</h3>
+                                <p>Guest speaker session.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="meetups">
+                        <div class="gallery-image">
+                            <div class="placeholder-gallery"><span>☕</span></div>
+                            <div class="gallery-overlay">
+                                <h3>Coffee &amp; Code</h3>
+                                <p>Weekly community meetup.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="workshops">
+                        <div class="gallery-image">
+                            <div class="placeholder-gallery"><span>🤖</span></div>
+                            <div class="gallery-overlay">
+                                <h3>AI Workshop</h3>
+                                <p>Intro to machine learning.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <div class="placeholder-gallery"><span>🎉</span></div>
+                            <div class="gallery-overlay">
+                                <h3>Year-End Party</h3>
+                                <p>Celebrating our members.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Event Highlights</h2>
+                <div class="grid video-grid">
+                    <article class="video-card">
+                        <div class="video-placeholder">
+                            <span class="play-icon" aria-hidden="true">▶️</span>
+                            <p>Hackathon Recap</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-placeholder">
+                            <span class="play-icon" aria-hidden="true">▶️</span>
+                            <p>Workshop Highlights</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-placeholder">
+                            <span class="play-icon" aria-hidden="true">▶️</span>
+                            <p>Member Stories</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-section">
+                <h3>Tech Club</h3>
+                <p>Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>📧 info@techclub.com</li>
+                    <li>📞 (555) 123-4567</li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

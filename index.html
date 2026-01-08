@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">🚀</span>
+                <span class="logo-text">Tech Club</span>
+            </div>
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact/Join</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light mode">
+                <span class="icon-sun" aria-hidden="true">☀️</span>
+                <span class="icon-moon" aria-hidden="true">🌙</span>
+                <span class="sr-only">Toggle dark or light theme</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <main id="main">
+        <section class="hero">
+            <div class="hero-slider" aria-label="Featured highlights" role="region">
+                <div class="slider-container">
+                    <article class="slide slide-1">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Welcome to Tech Club</h1>
+                            <p class="hero-subtitle">Innovate, learn, and build real projects with a supportive community.</p>
+                            <a href="contact.html" class="btn btn-primary">Join Us Today</a>
+                        </div>
+                    </article>
+                    <article class="slide slide-2">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Hands-on Workshops</h1>
+                            <p class="hero-subtitle">Web, mobile, AI, and more – guided by mentors and industry guests.</p>
+                            <a href="events.html" class="btn btn-primary">View Upcoming Events</a>
+                        </div>
+                    </article>
+                    <article class="slide slide-3">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Grow Your Network</h1>
+                            <p class="hero-subtitle">Connect with like-minded students, alumni, and companies.</p>
+                            <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="slider-nav" aria-label="Hero slider navigation">
+                    <button class="slider-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="slider-dot" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="slider-dot" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+                <button class="slider-arrow prev" aria-label="Previous slide">&#10094;</button>
+                <button class="slider-arrow next" aria-label="Next slide">&#10095;</button>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" id="features">
+            <div class="container">
+                <h2 class="section-title">Why Join Tech Club?</h2>
+                <div class="grid features-grid">
+                    <article class="card feature-card">
+                        <div class="feature-icon" aria-hidden="true">💡</div>
+                        <h3>Learn &amp; Grow</h3>
+                        <p>Workshops and tutorials on modern technologies like web dev, AI, and cloud.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <div class="feature-icon" aria-hidden="true">🤝</div>
+                        <h3>Community</h3>
+                        <p>Meet students from all years and backgrounds who love building things.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <div class="feature-icon" aria-hidden="true">🚀</div>
+                        <h3>Projects</h3>
+                        <p>Build portfolio-ready projects and take part in hackathons and competitions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Preview -->
+        <section class="section section-alt" id="upcoming">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="grid events-preview-grid">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">15</span>
+                            <span class="event-month">JAN</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Web Development Workshop</h3>
+                            <p>Introduction to HTML, CSS, and JavaScript for beginners.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">22</span>
+                            <span class="event-month">JAN</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Hackathon 2025</h3>
+                            <p>24-hour coding challenge with prizes and mentorship.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">30</span>
+                            <span class="event-month">JAN</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>AI &amp; Machine Learning Talk</h3>
+                            <p>Guest speaker from industry sharing the latest trends.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="events.html" class="btn btn-secondary">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section stats">
+            <div class="container">
+                <div class="grid stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Events</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-section">
+                <h3>Tech Club</h3>
+                <p>Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>📧 info@techclub.com</li>
+                    <li>📞 (555) 123-4567</li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
